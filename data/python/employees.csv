@@ -1,0 +1,101 @@
+employee_id,first_name,last_name,email,department,designation,joining_date,employment_type,status
+1001,James,Anderson,james.anderson1001@company.com,Engineering,Senior Software Engineer,2024-12-01,Contract,Active
+1002,Michael,Jackson,michael.jackson1002@company.com,Sales,Sales Executive,2023-06-01,Full-Time,Active
+1003,Michael,Thompson,michael.thompson1003@company.com,Engineering,Software Engineer,2021-05-17,Full-Time,Active
+1004,Henry,Miller,henry.miller1004@company.com,Sales,Sales Executive,2023-07-08,Full-Time,Active
+1005,Ava,White,ava.white1005@company.com,Marketing,Digital Marketing Analyst,2023-09-17,Contract,Active
+1006,Lucas,White,lucas.white1006@company.com,Marketing,Marketing Executive,2021-02-28,Full-Time,Active
+1007,Olivia,Lee,olivia.lee1007@company.com,Engineering,Software Engineer,2020-02-23,Full-Time,Active
+1008,Amelia,Garcia,amelia.garcia1008@company.com,Engineering,Engineering Manager,2020-04-23,Contract,Active
+1009,Charlotte,Martin,charlotte.martin1009@company.com,Marketing,Marketing Executive,2023-12-24,Contract,Active
+1010,Michael,Perez,michael.perez1010@company.com,Engineering,Senior Software Engineer,2020-04-01,Full-Time,Active
+1011,Evelyn,Williams,evelyn.williams1011@company.com,Marketing,Digital Marketing Analyst,2024-02-08,Full-Time,Active
+1012,Sophia,Wilson,sophia.wilson1012@company.com,Engineering,Software Engineer,2023-07-10,Contract,Active
+1013,Harper,Jackson,harper.jackson1013@company.com,Sales,Sales Manager,2024-04-08,Full-Time,Active
+1014,Mia,Taylor,mia.taylor1014@company.com,Engineering,Engineering Manager,2025-11-30,Intern,Active
+1015,Henry,Brown,henry.brown1015@company.com,Sales,Sales Manager,2021-07-17,Full-Time,Active
+1016,Harper,Smith,harper.smith1016@company.com,Engineering,Tech Lead,2025-02-20,Contract,Active
+1017,Ava,Perez,ava.perez1017@company.com,IT,System Administrator,2021-12-22,Intern,Active
+1018,Ella,Jackson,ella.jackson1018@company.com,Customer Support,Support Engineer,2020-05-08,Intern,Active
+1019,Michael,Davis,michael.davis1019@company.com,Customer Support,Support Engineer,2021-07-31,Full-Time,Active
+1020,Olivia,Thompson,olivia.thompson1020@company.com,Finance,Financial Analyst,2024-02-06,Full-Time,Active
+1021,Ethan,Moore,ethan.moore1021@company.com,Sales,Sales Manager,2025-07-03,Full-Time,Active
+1022,Ethan,Thomas,ethan.thomas1022@company.com,Sales,Sales Executive,2023-05-18,Full-Time,Active
+1023,Olivia,Smith,olivia.smith1023@company.com,IT,Network Engineer,2025-04-28,Full-Time,Active
+1024,Harper,Jackson,harper.jackson1024@company.com,Sales,Sales Executive,2025-11-13,Full-Time,Active
+1025,Michael,Miller,michael.miller1025@company.com,Engineering,Software Engineer,2021-09-18,Full-Time,Active
+1026,Michael,Johnson,michael.johnson1026@company.com,Engineering,Engineering Manager,2020-11-07,Full-Time,Active
+1027,Alexander,Taylor,alexander.taylor1027@company.com,Engineering,Senior Software Engineer,2020-02-03,Full-Time,Active
+1028,Harper,Jones,harper.jones1028@company.com,Engineering,Software Engineer,2023-07-23,Full-Time,Active
+1029,Henry,Williams,henry.williams1029@company.com,Sales,Business Development Executive,2023-05-10,Full-Time,Active
+1030,Amelia,Davis,amelia.davis1030@company.com,Marketing,Marketing Specialist,2021-04-03,Intern,Active
+1031,Daniel,Wilson,daniel.wilson1031@company.com,Engineering,Senior Software Engineer,2023-12-21,Intern,Active
+1032,Olivia,Johnson,olivia.johnson1032@company.com,Operations,Operations Analyst,2021-05-31,Full-Time,Active
+1033,Ava,Miller,ava.miller1033@company.com,Operations,Operations Manager,2023-11-24,Full-Time,Inactive
+1034,Ella,Johnson,ella.johnson1034@company.com,Engineering,Senior Software Engineer,2025-10-07,Full-Time,Active
+1035,Alexander,Taylor,alexander.taylor1035@company.com,Marketing,Digital Marketing Analyst,2020-12-19,Full-Time,Active
+1036,Ava,Johnson,ava.johnson1036@company.com,Engineering,Engineering Manager,2025-05-20,Contract,Active
+1037,Amelia,Smith,amelia.smith1037@company.com,Finance,Financial Analyst,2024-01-17,Full-Time,Active
+1038,Ava,Moore,ava.moore1038@company.com,Marketing,Marketing Executive,2023-01-24,Full-Time,Inactive
+1039,James,Wilson,james.wilson1039@company.com,Sales,Sales Executive,2025-08-07,Contract,Active
+1040,Lucas,Moore,lucas.moore1040@company.com,Sales,Sales Executive,2023-06-22,Intern,Active
+1041,Ethan,Taylor,ethan.taylor1041@company.com,IT,Network Engineer,2020-04-29,Contract,Active
+1042,James,Garcia,james.garcia1042@company.com,Sales,Business Development Executive,2020-10-27,Intern,Active
+1043,Benjamin,Anderson,benjamin.anderson1043@company.com,Sales,Business Development Executive,2021-01-18,Full-Time,Active
+1044,Ava,Harris,ava.harris1044@company.com,Engineering,Engineering Manager,2025-03-18,Full-Time,Active
+1045,Alexander,Harris,alexander.harris1045@company.com,Engineering,Engineering Manager,2023-03-25,Full-Time,Active
+1046,Sophia,White,sophia.white1046@company.com,Engineering,Tech Lead,2024-12-20,Contract,Active
+1047,Michael,Taylor,michael.taylor1047@company.com,Human Resources,HR Executive,2025-12-03,Full-Time,Active
+1048,Olivia,Jones,olivia.jones1048@company.com,Engineering,Software Engineer,2021-02-08,Full-Time,Active
+1049,Ella,Martin,ella.martin1049@company.com,Customer Support,Support Engineer,2020-02-13,Full-Time,Active
+1050,Sophia,Brown,sophia.brown1050@company.com,Engineering,Software Engineer,2020-02-24,Full-Time,Active
+1051,William,Anderson,william.anderson1051@company.com,IT,System Administrator,2023-07-29,Full-Time,Active
+1052,Ella,Lee,ella.lee1052@company.com,Engineering,Senior Software Engineer,2023-11-05,Full-Time,Active
+1053,Ella,Wilson,ella.wilson1053@company.com,Engineering,Software Engineer,2024-05-10,Full-Time,Active
+1054,Ava,Johnson,ava.johnson1054@company.com,Engineering,Tech Lead,2024-08-24,Full-Time,Active
+1055,Daniel,Wilson,daniel.wilson1055@company.com,Finance,Finance Manager,2025-12-07,Contract,Active
+1056,Mia,Perez,mia.perez1056@company.com,Finance,Accountant,2021-06-21,Contract,Active
+1057,Michael,Anderson,michael.anderson1057@company.com,Engineering,Software Engineer,2023-02-25,Full-Time,Inactive
+1058,Charlotte,Garcia,charlotte.garcia1058@company.com,Operations,Operations Analyst,2021-12-24,Contract,Active
+1059,Ava,Jones,ava.jones1059@company.com,Operations,Operations Executive,2022-11-15,Intern,Active
+1060,John,White,john.white1060@company.com,Engineering,Tech Lead,2022-07-22,Full-Time,Active
+1061,Charlotte,Miller,charlotte.miller1061@company.com,IT,System Administrator,2020-02-25,Full-Time,Active
+1062,Michael,Perez,michael.perez1062@company.com,Engineering,Tech Lead,2021-11-05,Full-Time,Active
+1063,Amelia,Garcia,amelia.garcia1063@company.com,Sales,Business Development Executive,2025-01-14,Full-Time,Active
+1064,Lucas,Williams,lucas.williams1064@company.com,Engineering,Tech Lead,2025-07-31,Full-Time,Active
+1065,William,Brown,william.brown1065@company.com,Operations,Operations Manager,2021-11-01,Full-Time,Active
+1066,John,Davis,john.davis1066@company.com,IT,Network Engineer,2025-06-24,Full-Time,Active
+1067,William,Lee,william.lee1067@company.com,Human Resources,HR Manager,2025-02-10,Full-Time,Active
+1068,Olivia,Jackson,olivia.jackson1068@company.com,IT,Network Engineer,2024-02-01,Contract,Active
+1069,Henry,Garcia,henry.garcia1069@company.com,Marketing,Marketing Specialist,2021-04-21,Full-Time,Active
+1070,Sophia,Jackson,sophia.jackson1070@company.com,Engineering,Software Engineer,2023-01-10,Intern,Active
+1071,Michael,White,michael.white1071@company.com,Engineering,Senior Software Engineer,2022-05-09,Intern,Active
+1072,Emma,Wilson,emma.wilson1072@company.com,Sales,Business Development Executive,2021-09-28,Contract,Active
+1073,Harper,Davis,harper.davis1073@company.com,Engineering,Tech Lead,2023-12-01,Contract,Active
+1074,Sophia,Johnson,sophia.johnson1074@company.com,Operations,Operations Analyst,2020-01-30,Full-Time,Active
+1075,Amelia,Williams,amelia.williams1075@company.com,Sales,Sales Manager,2023-08-19,Full-Time,Active
+1076,Harper,Brown,harper.brown1076@company.com,Engineering,Engineering Manager,2025-05-16,Full-Time,Active
+1077,Alexander,Williams,alexander.williams1077@company.com,Marketing,Marketing Executive,2022-03-05,Full-Time,Inactive
+1078,John,Moore,john.moore1078@company.com,Finance,Accountant,2024-12-12,Full-Time,Active
+1079,Henry,Brown,henry.brown1079@company.com,Engineering,Tech Lead,2024-03-19,Full-Time,Active
+1080,Ella,Johnson,ella.johnson1080@company.com,Sales,Business Development Executive,2024-06-11,Intern,Active
+1081,Michael,Lee,michael.lee1081@company.com,Sales,Sales Executive,2023-07-05,Full-Time,Active
+1082,Amelia,Miller,amelia.miller1082@company.com,Operations,Operations Executive,2022-10-03,Full-Time,Active
+1083,Evelyn,Lee,evelyn.lee1083@company.com,Sales,Business Development Executive,2020-05-30,Full-Time,Active
+1084,Evelyn,Johnson,evelyn.johnson1084@company.com,Human Resources,HR Executive,2025-02-27,Full-Time,Active
+1085,Ava,Davis,ava.davis1085@company.com,Engineering,Engineering Manager,2024-09-09,Intern,Active
+1086,Alexander,Perez,alexander.perez1086@company.com,Marketing,Digital Marketing Analyst,2022-06-04,Full-Time,Active
+1087,Mia,Moore,mia.moore1087@company.com,Sales,Sales Manager,2025-03-29,Full-Time,Active
+1088,Ethan,Jackson,ethan.jackson1088@company.com,Sales,Sales Executive,2023-02-10,Full-Time,Active
+1089,James,Moore,james.moore1089@company.com,Sales,Sales Executive,2024-11-09,Full-Time,Active
+1090,Olivia,Thompson,olivia.thompson1090@company.com,Marketing,Digital Marketing Analyst,2021-06-23,Intern,Active
+1091,Ethan,Taylor,ethan.taylor1091@company.com,Marketing,Digital Marketing Analyst,2024-02-25,Contract,Active
+1092,Amelia,Taylor,amelia.taylor1092@company.com,Sales,Sales Executive,2020-01-31,Contract,Active
+1093,Charlotte,Thomas,charlotte.thomas1093@company.com,Engineering,Engineering Manager,2022-01-04,Full-Time,Active
+1094,Ava,Perez,ava.perez1094@company.com,Engineering,Senior Software Engineer,2025-03-30,Full-Time,Active
+1095,Henry,Taylor,henry.taylor1095@company.com,Engineering,Software Engineer,2023-11-20,Full-Time,Active
+1096,Henry,Lee,henry.lee1096@company.com,Sales,Sales Executive,2020-10-01,Contract,Active
+1097,Henry,Anderson,henry.anderson1097@company.com,Sales,Sales Executive,2020-11-26,Full-Time,Active
+1098,Harper,Jackson,harper.jackson1098@company.com,Finance,Finance Manager,2024-11-07,Full-Time,Active
+1099,Sophia,Moore,sophia.moore1099@company.com,Marketing,Marketing Specialist,2025-01-31,Full-Time,Active
+1100,Mia,Martin,mia.martin1100@company.com,Sales,Sales Manager,2020-05-12,Full-Time,Active
