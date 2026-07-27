@@ -1,0 +1,4 @@
+# Third-party dependencies
+
+# Currently none.
+# This project uses only Python's standard library.
