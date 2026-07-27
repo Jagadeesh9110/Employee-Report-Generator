@@ -374,6 +374,82 @@ Gross Salary
 
 ---
 
+# Synthetic Data Generation Rules
+
+The datasets are generated using predefined business assumptions to simulate a realistic HR Management System.
+
+## Employee Generation Rules
+
+- Employee IDs start from **1001** and increment sequentially.
+- Every employee has a unique email address.
+- Phone numbers are randomly generated using valid Indian mobile prefixes.
+- Joining dates are randomly assigned between **2020 and 2025**.
+- Each employee belongs to exactly one department.
+- Every department has a predefined set of valid designations.
+- Employment type is randomly assigned as Full-Time, Contract, or Intern.
+- Employee status is generated as Active, On Leave, or Resigned.
+- Cities are selected from a predefined list of office locations.
+
+---
+
+## Attendance Generation Rules
+
+Attendance records are generated only for the year **2025**.
+
+Attendance generation follows these rules:
+
+- Employees joining before 2025 receive attendance from January.
+- Employees joining during 2025 receive attendance beginning from their joining month.
+- Employees joining after 2025 are excluded.
+- Working days include only Monday to Friday.
+- Present, leave, and absent days always sum to the total working days.
+- Attendance quality is randomly categorized as:
+  - Excellent
+  - Good
+  - Average
+  - Poor
+- Expected working hours are calculated as:
+
+```
+Working Days × 8
+```
+
+- Actual working hours depend on attendance and overtime.
+- Overtime hours are generated only for eligible attendance records.
+
+---
+
+## Salary Generation Rules
+
+Salary records are generated directly from employee and attendance data.
+
+Business rules include:
+
+- Basic salary is determined by employee designation.
+- HRA is fixed at 20% of the basic salary.
+- Special Allowance is fixed at 15% of the basic salary.
+- Overtime pay is calculated using overtime hours.
+- PF deduction is fixed at 12% of the basic salary.
+- Tax deduction follows predefined salary slabs.
+- Leave deduction is calculated only for absent days.
+- Gross salary, total deductions, and net salary are calculated automatically.
+- One salary record is generated for every attendance record.
+
+---
+
+## Dataset Consistency Rules
+
+The generators enforce the following consistency constraints:
+
+- Employee IDs remain unique across all datasets.
+- Attendance cannot exist without an employee.
+- Salary cannot exist without attendance.
+- Foreign keys always reference valid employee records.
+- Duplicate primary keys are not generated.
+- Every salary record corresponds to a valid attendance record.
+- Dataset relationships remain consistent throughout generation.
+
+
 # Data Flow
 
 ```
