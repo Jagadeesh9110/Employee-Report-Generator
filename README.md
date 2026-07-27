@@ -2,135 +2,368 @@
 
 ## Overview
 
-Employee Report Generator is a Python-based application designed to automate the process of generating monthly employee reports from multiple data sources. Instead of manually collecting, validating, and summarizing employee information, the application processes the available data and produces a standardized management report.
+Employee Report Generator is a Python-based Data Engineering project that simulates an HR Management System by generating realistic employee, attendance, and salary datasets. The project demonstrates professional Python development practices while building datasets that can later be used for ETL pipelines, SQL querying, reporting, dashboard development, and data validation.
 
-The primary objective of this project is to apply professional Python development practices while solving a real-world business problem. The project emphasizes clean architecture, modular design, object-oriented programming, exception handling, logging, and structured data processing.
+Instead of relying on publicly available datasets, this project generates synthetic business data using configurable business rules. The generated datasets are interconnected and closely resemble real-world enterprise HR data.
 
----
-
-## Problem Statement
-
-In many organizations, employee-related information is maintained across multiple systems. Employee details, attendance records, and salary information are often stored separately and need to be combined before preparing monthly management reports.
-
-The existing reporting process usually involves manually reading multiple files, validating the data, calculating business metrics, and preparing summary reports. As the organization grows, this process becomes increasingly time-consuming, repetitive, and prone to human error.
-
-Some of the common challenges include:
-
-- Employee data distributed across multiple files.
-- Manual effort required to prepare reports.
-- Increased possibility of calculation errors.
-- Difficulty identifying missing or inconsistent records.
-- Lack of a standardized reporting format.
-- Reduced efficiency as the amount of data increases.
-
-Organizations require an automated solution that can process employee-related information efficiently while maintaining consistency and accuracy.
+The project emphasizes clean architecture, modular programming, structured data generation, logging, exception handling, and maintainable code.
 
 ---
 
-## Proposed Solution
+# Problem Statement
 
-The Employee Report Generator provides an automated workflow for processing employee information.
+Employee information in many organizations is distributed across multiple systems. Employee details, attendance records, payroll information, and department data are often maintained separately.
 
-The application will:
+Preparing management reports requires combining data from multiple sources, validating records, performing calculations, and generating summaries. As organizations grow, this manual process becomes increasingly time-consuming and error-prone.
 
-- Read employee-related data from multiple input files.
-- Validate the integrity of the available data.
-- Process business information.
-- Calculate useful employee and department statistics.
-- Generate a standardized management report.
-- Log important application events and errors.
+Common challenges include:
 
-The solution reduces manual effort, improves reporting accuracy, and provides a consistent reporting process.
+- Employee data stored across multiple files.
+- Manual payroll calculations.
+- Attendance and salary inconsistencies.
+- Repetitive report preparation.
+- Lack of standardized datasets for analytics.
+- Difficulty validating relationships between datasets.
 
----
-
-## Project Goals
-
-The primary goals of this project are:
-
-- Automate employee report generation.
-- Eliminate repetitive manual processing.
-- Improve reporting accuracy through data validation.
-- Demonstrate professional Python project organization.
-- Practice object-oriented programming and modular application design.
-- Build a real-world portfolio project using core Python.
+An automated solution is required to generate consistent, realistic datasets that can serve as the foundation for analytics and reporting.
 
 ---
 
-## Planned Features
+# Proposed Solution
 
-The following features will be implemented throughout the project:
+The Employee Report Generator automates the creation of synthetic HR datasets using Python.
 
-- Read employee information from CSV files.
-- Read attendance records.
-- Read salary information.
-- Validate input datasets.
-- Handle invalid or missing data gracefully.
-- Generate employee summary reports.
-- Generate department-wise statistics.
-- Generate salary statistics.
-- Generate attendance summaries.
-- Store application logs.
-- Load configurable settings from JSON files.
-- Provide structured error handling.
+The application:
+
+- Generates employee master data.
+- Creates realistic monthly attendance records.
+- Calculates employee salaries using business rules.
+- Maintains relationships across datasets.
+- Produces clean CSV files suitable for ETL and analytics.
+- Provides a foundation for future report generation and dashboard development.
 
 ---
 
-## Technologies
+# Project Architecture
 
-The project will primarily use:
+```text
+employee-report-generator/
+│
+├── data/
+│   └── python/
+│       ├── employees.csv
+│       ├── attendance.csv
+│       └── salary.csv
+│
+├── scripts/
+│   └── python/
+│       ├── generate_employees.py
+│       ├── generate_attendance.py
+│       └── generate_salary.py
+│
+├── src/
+│
+├── docs/
+│   └── dataset_design.md
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-- Python
-- CSV
-- JSON
+---
+
+# Current Features
+
+The project currently supports:
+
+- Generate employee master dataset.
+- Generate monthly attendance records.
+- Generate monthly salary records.
+- Generate realistic synthetic HR data.
+- Maintain relationships between datasets.
+- Calculate attendance metrics.
+- Calculate payroll components.
+- Apply business validation rules.
+- Generate CSV datasets automatically.
+- Document dataset schema and business logic.
+
+---
+
+# Datasets
+
+## 1. employees.csv
+
+Contains master employee information.
+
+Example fields:
+
+- Employee ID
+- Name
+- Gender
+- Department
+- Designation
+- Employment Type
+- Joining Date
+- Email
+- Phone Number
+- City
+- Status
+
+---
+
+## 2. attendance.csv
+
+Generated from employee data.
+
+Contains monthly attendance information.
+
+Example fields:
+
+- Attendance ID
+- Employee ID
+- Month
+- Working Days
+- Present Days
+- Leave Days
+- Absent Days
+- Late Days
+- Expected Working Hours
+- Actual Working Hours
+- Overtime Hours
+- Attendance Percentage
+
+---
+
+## 3. salary.csv
+
+Generated using employee and attendance datasets.
+
+Contains payroll information.
+
+Example fields:
+
+- Salary ID
+- Employee ID
+- Month
+- Basic Salary
+- HRA
+- Special Allowance
+- Overtime Pay
+- Gross Salary
+- Tax Deduction
+- PF Deduction
+- Leave Deduction
+- Total Deductions
+- Net Salary
+
+---
+
+# Dataset Relationships
+
+```text
+employees.csv
+      │
+      │ employee_id
+      │
+      ├────────────► attendance.csv
+      │
+      └────────────► salary.csv
+```
+
+Relationship Type
+
+- One Employee → Many Attendance Records
+- One Employee → Many Salary Records
+
+Salary records are generated using attendance records.
+
+---
+
+# Business Workflow
+
+```text
+Generate Employees
+          │
+          ▼
+employees.csv
+          │
+          ▼
+Generate Attendance
+          │
+          ▼
+attendance.csv
+          │
+          ▼
+Generate Salary
+          │
+          ▼
+salary.csv
+```
+
+---
+
+# Technologies Used
+
+## Programming Language
+
+- Python 3
+
+## Standard Libraries
+
+- csv
 - pathlib
-- logging
 - datetime
+- calendar
+- random
+- json
+- logging
 - collections
 
-Additional technologies such as NumPy, Pandas, and PostgreSQL will **not** be part of this project. They will be introduced in future projects after completing the corresponding learning modules.
+## Development Tools
+
+- Git
+- GitHub
+- Visual Studio Code
 
 ---
 
-## Project Status
+# Business Logic Highlights
 
-🚧 **Currently Under Development**
+## Employee Dataset
 
-This project is being developed incrementally by following a professional software development workflow.
+- Unique employee IDs.
+- Department-based designations.
+- Unique email addresses.
+- Random joining dates.
+- Multiple employment types.
+- Employee status tracking.
 
-Current Phase:
+---
+
+## Attendance Dataset
+
+- Attendance generated only for 2025.
+- Employees joining during 2025 receive attendance from their joining month.
+- Working days calculated using weekdays.
+- Attendance quality categories:
+  - Excellent
+  - Good
+  - Average
+  - Poor
+- Overtime generation.
+- Attendance percentage calculation.
+
+---
+
+## Salary Dataset
+
+- Salary based on designation.
+- HRA = 20% of Basic Salary.
+- Special Allowance = 15% of Basic Salary.
+- Overtime Pay = Overtime Hours × 500.
+- PF = 12% of Basic Salary.
+- Tax calculated using salary slabs.
+- Leave deduction based on absent days.
+- Net salary automatically calculated.
+
+---
+
+# Project Status
+
+## Current Progress
 
 - ✅ Requirement Analysis
-- ⏳ Functional Requirements Specification
-- ⏳ Project Structure Design
-- ⏳ Implementation
-- ⏳ Testing
-- ⏳ Documentation
+- ✅ Project Structure Design
+- ✅ Employee Dataset Generation
+- ✅ Attendance Dataset Generation
+- ✅ Salary Dataset Generation
+- ✅ Dataset Documentation
+- 🚧 Report Generation Module
+- 🚧 Data Validation Module
+- 🚧 Analytics Module
+- 🚧 Testing
 
 ---
 
-## Learning Objectives
+# Learning Objectives
 
-This project is intended to strengthen practical knowledge of:
+This project demonstrates practical knowledge of:
 
-- Professional Python programming
-- Object-Oriented Programming (OOP)
-- File handling
-- Modular project architecture
-- Exception handling
+- Python Programming
+- Object-Oriented Programming
+- File Handling
+- CSV Processing
+- JSON Processing
+- Modular Project Design
+- Exception Handling
 - Logging
-- Data validation
-- Business logic implementation
-- Git and GitHub workflow
+- Data Validation
+- Business Logic Implementation
+- Synthetic Data Generation
+- Git & GitHub Workflow
 
 ---
 
-## Future Scope
+# Future Roadmap
 
-After completing this project, an advanced version will be developed using:
+Upcoming features include:
 
-- NumPy
+- Employee Report Generator
+- Department-wise Analytics
+- Attendance Reports
+- Payroll Reports
+- Data Validation Engine
+- Configuration using JSON
+- Exception Reporting
+- Logging Improvements
+- Dashboard-ready outputs
+- ETL pipeline integration
+
+---
+
+# How to Run
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd employee-report-generator
+```
+
+Generate datasets:
+
+```bash
+python scripts/python/generate_employees.py
+python scripts/python/generate_attendance.py
+python scripts/python/generate_salary.py
+```
+
+Generated files will be available in:
+
+```text
+data/python/
+```
+
+---
+
+# Project Goals
+
+This project is part of a structured learning roadmap to master Data Engineering fundamentals using only core Python before introducing external libraries.
+
+The generated datasets will serve as the foundation for future work involving:
+
+- ETL Pipelines
+- SQL
+- PostgreSQL
 - Pandas
-- PostgreSQL integration with Python
-- SQL queries executed from Python
-- Advanced data processing and analytics
+- Data Cleaning
+- Dashboard Development
+- Data Warehousing
+- Analytics
+- Data Engineering Projects
