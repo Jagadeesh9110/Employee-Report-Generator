@@ -2,9 +2,14 @@
 
 ## Overview
 
-Employee Report Generator is a Python-based Data Engineering project that simulates an HR Management System by generating realistic employee, attendance, and salary datasets. The project demonstrates professional Python development practices while building datasets that can later be used for ETL pipelines, SQL querying, reporting, dashboard development, and data validation.
+Employee Report Generator is a Python-based Data Engineering project that simulates an HR Management System by generating realistic employee, attendance, and salary datasets.
 
-Instead of relying on publicly available datasets, this project generates synthetic business data using configurable business rules. The generated datasets are interconnected and closely resemble real-world enterprise HR data.
+The project provides two independent implementations for synthetic data generation:
+
+- Python Standard Library
+- Faker Library
+
+Both implementations produce identical dataset schemas while following the same business rules and relationships. The generated datasets can be used for ETL pipelines, SQL querying, reporting, dashboard development, and data validation.
 
 The project emphasizes clean architecture, modular programming, structured data generation, logging, exception handling, and maintainable code.
 
@@ -50,19 +55,28 @@ The application:
 employee-report-generator/
 │
 ├── data/
-│   └── python/
+│   ├── python/
+│   │   ├── employees.csv
+│   │   ├── attendance.csv
+│   │   └── salary.csv
+│   │
+│   └── faker/
 │       ├── employees.csv
 │       ├── attendance.csv
 │       └── salary.csv
 │
 ├── scripts/
-│   └── python/
+│   ├── python/
+│   │   ├── generate_employees.py
+│   │   ├── generate_attendance.py
+│   │   └── generate_salary.py
+│   │
+│   └── faker/
 │       ├── generate_employees.py
 │       ├── generate_attendance.py
 │       └── generate_salary.py
 │
 ├── src/
-│
 ├── docs/
 │   └── dataset_design.md
 │
@@ -70,6 +84,19 @@ employee-report-generator/
 ├── requirements.txt
 └── .gitignore
 ```
+
+
+# Dataset Generation Approaches
+
+The project supports two independent implementations for generating the same HR datasets.
+
+| Implementation | Description |
+|---------------|-------------|
+| Python Standard Library | Generates synthetic datasets using only Python's built-in libraries. |
+| Faker Library | Generates realistic employee information using the Faker library while preserving the same schema and business rules. |
+
+Both implementations generate identical dataset structures. The only difference is the method used to generate employee information.
+
 
 ---
 
@@ -87,75 +114,22 @@ The project currently supports:
 - Apply business validation rules.
 - Generate CSV datasets automatically.
 - Document dataset schema and business logic.
+- Support both Python Standard Library and Faker-based dataset generation.
 
 ---
 
 # Datasets
+# Datasets
 
-## 1. employees.csv
+The project generates three related CSV datasets:
 
-Contains master employee information.
+| Dataset | Description |
+|---------|-------------|
+| employees.csv | Master employee information |
+| attendance.csv | Monthly attendance records |
+| salary.csv | Monthly salary records |
 
-Example fields:
-
-- Employee ID
-- Name
-- Gender
-- Department
-- Designation
-- Employment Type
-- Joining Date
-- Email
-- Phone Number
-- City
-- Status
-
----
-
-## 2. attendance.csv
-
-Generated from employee data.
-
-Contains monthly attendance information.
-
-Example fields:
-
-- Attendance ID
-- Employee ID
-- Month
-- Working Days
-- Present Days
-- Leave Days
-- Absent Days
-- Late Days
-- Expected Working Hours
-- Actual Working Hours
-- Overtime Hours
-- Attendance Percentage
-
----
-
-## 3. salary.csv
-
-Generated using employee and attendance datasets.
-
-Contains payroll information.
-
-Example fields:
-
-- Salary ID
-- Employee ID
-- Month
-- Basic Salary
-- HRA
-- Special Allowance
-- Overtime Pay
-- Gross Salary
-- Tax Deduction
-- PF Deduction
-- Leave Deduction
-- Total Deductions
-- Net Salary
+Detailed dataset schemas, relationships, and business rules are documented in **docs/dataset_design.md**.
 
 ---
 
@@ -225,6 +199,10 @@ salary.csv
 - Git
 - GitHub
 - Visual Studio Code
+
+## Third-Party Libraries
+
+- Faker
 
 ---
 
@@ -337,6 +315,7 @@ cd employee-report-generator
 ```
 
 Generate datasets:
+### Python Standard Library Implementation
 
 ```bash
 python scripts/python/generate_employees.py
@@ -344,10 +323,24 @@ python scripts/python/generate_attendance.py
 python scripts/python/generate_salary.py
 ```
 
-Generated files will be available in:
+Generated datasets:
 
 ```text
 data/python/
+```
+
+### Faker Implementation
+
+```bash
+python scripts/faker/generate_employees.py
+python scripts/faker/generate_attendance.py
+python scripts/faker/generate_salary.py
+```
+
+Generated datasets:
+
+```text
+data/faker/
 ```
 
 ---
