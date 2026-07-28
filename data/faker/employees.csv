@@ -1,0 +1,101 @@
+employee_id,first_name,last_name,email,department,designation,joining_date,employment_type,status
+1001,Bhavna,Butala,bhavna.butala@techcorp.com,Operations,Operations Analyst,2020-03-18,Intern,Active
+1002,Diya,Naidu,diya.naidu@techcorp.com,Human Resources,Talent Acquisition Specialist,2024-08-01,Full-Time,Active
+1003,Ishanvi,Naik,ishanvi.naik@techcorp.com,Customer Support,Customer Success Executive,2025-02-19,Full-Time,Active
+1004,Frado,Sachar,frado.sachar@techcorp.com,Engineering,Tech Lead,2025-07-17,Full-Time,Active
+1005,Warjas,Mand,warjas.mand@techcorp.com,Marketing,Digital Marketing Analyst,2021-06-15,Full-Time,Inactive
+1006,Mason,Varughese,mason.varughese@techcorp.com,Engineering,Software Engineer,2021-05-24,Full-Time,Active
+1007,Vasatika,Bawa,vasatika.bawa@techcorp.com,Operations,Operations Analyst,2022-04-12,Full-Time,Inactive
+1008,Logan,Mall,logan.mall@techcorp.com,Marketing,Digital Marketing Analyst,2022-05-11,Full-Time,Active
+1009,Gautami,Wali,gautami.wali@techcorp.com,Marketing,Marketing Executive,2020-12-31,Full-Time,Active
+1010,Peter,Krish,peter.krish@techcorp.com,Finance,Finance Manager,2024-04-11,Contract,Active
+1011,Avni,Palla,avni.palla@techcorp.com,Customer Support,Support Engineer,2022-03-24,Full-Time,Active
+1012,Krishna,Gour,krishna.gour@techcorp.com,Human Resources,Talent Acquisition Specialist,2021-08-27,Full-Time,Active
+1013,Panini,Srinivasan,panini.srinivasan@techcorp.com,Operations,Operations Analyst,2021-04-30,Full-Time,Active
+1014,Parth,Rastogi,parth.rastogi@techcorp.com,Human Resources,HR Executive,2020-11-27,Full-Time,Active
+1015,Eesha,Mangal,eesha.mangal@techcorp.com,Sales,Sales Executive,2024-04-04,Full-Time,Inactive
+1016,Peter,Jain,peter.jain@techcorp.com,Operations,Operations Executive,2023-10-27,Contract,Active
+1017,Vihaan,Banerjee,vihaan.banerjee@techcorp.com,Engineering,Senior Software Engineer,2021-01-12,Full-Time,Active
+1018,Qabil,Natt,qabil.natt@techcorp.com,Engineering,Senior Software Engineer,2020-09-11,Contract,Active
+1019,Krishna,Gala,krishna.gala@techcorp.com,Engineering,Senior Software Engineer,2023-12-19,Full-Time,Active
+1020,Banjeet,Bora,banjeet.bora@techcorp.com,Customer Support,Customer Success Executive,2020-01-07,Contract,Active
+1021,Rehaan,Patla,rehaan.patla@techcorp.com,Engineering,Software Engineer,2023-10-20,Full-Time,Active
+1022,Madhavi,Hayer,madhavi.hayer@techcorp.com,Operations,Operations Analyst,2024-05-10,Full-Time,Active
+1023,Abhiram,Das,abhiram.das@techcorp.com,Operations,Operations Analyst,2025-11-04,Full-Time,Active
+1024,Bhavika,Lata,bhavika.lata@techcorp.com,Customer Support,Customer Success Executive,2022-05-04,Full-Time,Active
+1025,Urvashi,Wable,urvashi.wable@techcorp.com,Marketing,Digital Marketing Analyst,2022-06-05,Full-Time,Active
+1026,Meghana,Mukhopadhyay,meghana.mukhopadhyay@techcorp.com,IT,System Administrator,2021-07-18,Full-Time,Active
+1027,Aarav,Raja,aarav.raja@techcorp.com,IT,DevOps Engineer,2024-05-09,Full-Time,Active
+1028,Ekansh,Narayan,ekansh.narayan@techcorp.com,Engineering,Engineering Manager,2020-06-14,Full-Time,Active
+1029,Falan,Gole,falan.gole@techcorp.com,Marketing,Marketing Executive,2022-04-27,Intern,Active
+1030,Xalak,Soman,xalak.soman@techcorp.com,Customer Support,Support Engineer,2024-07-21,Full-Time,Active
+1031,Chandran,Ray,chandran.ray@techcorp.com,Operations,Operations Executive,2025-08-20,Contract,Active
+1032,Vidhi,Rajagopal,vidhi.rajagopal@techcorp.com,Engineering,Engineering Manager,2020-08-20,Contract,Active
+1033,Urvashi,Chada,urvashi.chada@techcorp.com,Engineering,Engineering Manager,2020-02-17,Full-Time,Active
+1034,Samar,Dasgupta,samar.dasgupta@techcorp.com,Engineering,Senior Software Engineer,2023-06-05,Full-Time,Active
+1035,Isaac,Tank,isaac.tank@techcorp.com,Engineering,Software Engineer,2020-07-21,Full-Time,Active
+1036,Dayamai,Mandal,dayamai.mandal@techcorp.com,Engineering,Tech Lead,2024-09-14,Full-Time,Active
+1037,Yochana,Mand,yochana.mand@techcorp.com,Operations,Operations Manager,2020-08-15,Contract,Active
+1038,Gaurang,Swaminathan,gaurang.swaminathan@techcorp.com,Engineering,Engineering Manager,2023-10-24,Contract,Inactive
+1039,Vedant,Pingle,vedant.pingle@techcorp.com,Customer Support,Customer Success Executive,2023-12-19,Intern,Active
+1040,Amaira,Thaman,amaira.thaman@techcorp.com,Sales,Business Development Executive,2024-07-17,Contract,Active
+1041,Kevin,Bhatnagar,kevin.bhatnagar@techcorp.com,Operations,Operations Analyst,2023-03-28,Full-Time,Active
+1042,Zehaan,Saha,zehaan.saha@techcorp.com,Operations,Operations Manager,2022-12-16,Full-Time,Active
+1043,Vasana,Ravel,vasana.ravel@techcorp.com,Operations,Operations Analyst,2024-07-30,Contract,Inactive
+1044,Faras,Basak,faras.basak@techcorp.com,Engineering,Engineering Manager,2024-07-28,Full-Time,Active
+1045,Ishanvi,Kumar,ishanvi.kumar@techcorp.com,Marketing,Marketing Executive,2025-09-20,Full-Time,Active
+1046,Benjamin,Tripathi,benjamin.tripathi@techcorp.com,Operations,Operations Analyst,2023-04-19,Contract,Active
+1047,Amol,Deol,amol.deol@techcorp.com,Human Resources,Talent Acquisition Specialist,2021-09-19,Full-Time,Active
+1048,Anya,Natt,anya.natt@techcorp.com,Finance,Accountant,2023-09-07,Full-Time,Active
+1049,Anirudh,Nigam,anirudh.nigam@techcorp.com,Customer Support,Support Engineer,2025-05-16,Full-Time,Active
+1050,Qadim,Khare,qadim.khare@techcorp.com,Customer Support,Customer Success Executive,2025-12-21,Intern,Inactive
+1051,Yasti,Gola,yasti.gola@techcorp.com,Marketing,Digital Marketing Analyst,2023-03-27,Full-Time,Active
+1052,Darpan,Hegde,darpan.hegde@techcorp.com,Human Resources,Talent Acquisition Specialist,2021-01-10,Full-Time,Active
+1053,Tripti,Dani,tripti.dani@techcorp.com,Customer Support,Support Engineer,2022-11-01,Full-Time,Active
+1054,Nachiket,Mangat,nachiket.mangat@techcorp.com,Marketing,Digital Marketing Analyst,2025-10-13,Full-Time,Active
+1055,Unni,Dhingra,unni.dhingra@techcorp.com,Finance,Financial Analyst,2020-04-10,Full-Time,Active
+1056,Chaaya,Pau,chaaya.pau@techcorp.com,Engineering,Senior Software Engineer,2020-08-06,Full-Time,Inactive
+1057,Gunbir,Dugar,gunbir.dugar@techcorp.com,Finance,Financial Analyst,2020-12-10,Full-Time,Active
+1058,Fariq,Shenoy,fariq.shenoy@techcorp.com,Sales,Sales Manager,2022-06-29,Full-Time,Active
+1059,Om,Pillay,om.pillay@techcorp.com,Sales,Sales Manager,2025-01-17,Full-Time,Active
+1060,Faraj,Gill,faraj.gill@techcorp.com,Engineering,Software Engineer,2024-07-18,Full-Time,Active
+1061,Ijaya,Kulkarni,ijaya.kulkarni@techcorp.com,Finance,Finance Manager,2021-06-01,Full-Time,Active
+1062,George,Bali,george.bali@techcorp.com,Engineering,Tech Lead,2023-06-07,Full-Time,Active
+1063,Ekalinga,Sagar,ekalinga.sagar@techcorp.com,Operations,Operations Manager,2024-07-01,Contract,Active
+1064,Aadi,Mittal,aadi.mittal@techcorp.com,Engineering,Software Engineer,2021-09-14,Full-Time,Active
+1065,Abeer,Kunda,abeer.kunda@techcorp.com,Finance,Financial Analyst,2020-08-18,Intern,Active
+1066,Nidhi,Bali,nidhi.bali@techcorp.com,Sales,Sales Manager,2020-12-04,Contract,Active
+1067,Dayamai,Kulkarni,dayamai.kulkarni@techcorp.com,Engineering,Engineering Manager,2022-11-20,Contract,Active
+1068,Aarush,Ravi,aarush.ravi@techcorp.com,Human Resources,HR Manager,2024-10-17,Full-Time,Active
+1069,Hardik,Jani,hardik.jani@techcorp.com,Engineering,Senior Software Engineer,2021-10-13,Contract,Inactive
+1070,Adya,Ramakrishnan,adya.ramakrishnan@techcorp.com,Sales,Sales Manager,2024-12-11,Intern,Active
+1071,Nidra,Uppal,nidra.uppal@techcorp.com,Engineering,Software Engineer,2020-07-05,Full-Time,Active
+1072,Falak,Soni,falak.soni@techcorp.com,Engineering,Engineering Manager,2023-01-23,Full-Time,Active
+1073,Meera,Dasgupta,meera.dasgupta@techcorp.com,Engineering,Software Engineer,2022-07-02,Intern,Active
+1074,Aryan,Sur,aryan.sur@techcorp.com,Marketing,Marketing Executive,2023-05-08,Contract,Inactive
+1075,Shivani,Master,shivani.master@techcorp.com,Human Resources,HR Executive,2025-05-24,Full-Time,Active
+1076,Harshil,Khalsa,harshil.khalsa@techcorp.com,Sales,Sales Executive,2025-08-12,Full-Time,Active
+1077,Umang,Garg,umang.garg@techcorp.com,Finance,Finance Manager,2023-03-06,Full-Time,Active
+1078,Veer,Mallick,veer.mallick@techcorp.com,Finance,Finance Manager,2020-02-07,Full-Time,Active
+1079,Lakshmi,Ghosh,lakshmi.ghosh@techcorp.com,Human Resources,HR Manager,2020-07-21,Full-Time,Active
+1080,Divya,Mistry,divya.mistry@techcorp.com,Human Resources,Talent Acquisition Specialist,2020-05-30,Full-Time,Active
+1081,Osha,Vasa,osha.vasa@techcorp.com,Engineering,Tech Lead,2022-08-17,Full-Time,Active
+1082,Nandini,Gokhale,nandini.gokhale@techcorp.com,Engineering,Engineering Manager,2022-02-08,Full-Time,Active
+1083,Tanish,Baria,tanish.baria@techcorp.com,Sales,Sales Executive,2021-03-21,Full-Time,Active
+1084,Anmol,Nagi,anmol.nagi@techcorp.com,Engineering,Senior Software Engineer,2020-08-24,Contract,Active
+1085,Ekapad,Mishra,ekapad.mishra@techcorp.com,Engineering,Senior Software Engineer,2024-01-07,Full-Time,Active
+1086,Manthan,Sahota,manthan.sahota@techcorp.com,Engineering,Tech Lead,2020-10-27,Contract,Active
+1087,Alexander,Bhargava,alexander.bhargava@techcorp.com,IT,System Administrator,2021-11-02,Full-Time,Active
+1088,Irya,Palla,irya.palla@techcorp.com,Marketing,Digital Marketing Analyst,2021-01-26,Intern,Active
+1089,Wriddhish,Pandit,wriddhish.pandit@techcorp.com,Operations,Operations Manager,2024-11-18,Intern,Active
+1090,Yochana,Manda,yochana.manda@techcorp.com,Operations,Operations Manager,2024-06-01,Full-Time,Active
+1091,Indali,Borah,indali.borah@techcorp.com,Sales,Sales Executive,2025-07-21,Full-Time,Active
+1092,Atharv,Narayan,atharv.narayan@techcorp.com,Sales,Sales Manager,2023-04-27,Full-Time,Active
+1093,Aahana,Edwin,aahana.edwin@techcorp.com,Sales,Business Development Executive,2023-06-08,Full-Time,Inactive
+1094,Charles,Sagar,charles.sagar@techcorp.com,Operations,Operations Manager,2023-12-30,Contract,Active
+1095,Bahadurjit,Bhardwaj,bahadurjit.bhardwaj@techcorp.com,Engineering,Tech Lead,2022-12-21,Contract,Active
+1096,Fariq,Vaidya,fariq.vaidya@techcorp.com,Finance,Financial Analyst,2024-11-20,Full-Time,Active
+1097,Priya,Wali,priya.wali@techcorp.com,Customer Support,Support Engineer,2021-07-13,Full-Time,Active
+1098,Rushil,Sharma,rushil.sharma@techcorp.com,IT,Network Engineer,2022-03-05,Full-Time,Active
+1099,Ekapad,Kohli,ekapad.kohli@techcorp.com,Sales,Sales Executive,2025-03-26,Full-Time,Active
+1100,Aayush,Tiwari,aayush.tiwari@techcorp.com,Engineering,Software Engineer,2024-03-17,Full-Time,Active
