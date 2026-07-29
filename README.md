@@ -4,6 +4,8 @@
 
 Employee Report Generator is a Python-based Data Engineering project that simulates an HR Management System by generating realistic employee, attendance, and salary datasets.
 
+In addition to synthetic dataset generation, the project implements a complete ETL (Extract, Transform, Load) pipeline that validates raw datasets, transforms them into standardized Python objects, merges related records, and generates management-ready reports.
+
 The project provides two independent implementations for synthetic data generation:
 
 - Python Standard Library
@@ -47,6 +49,15 @@ The application:
 - Produces clean CSV files suitable for ETL and analytics.
 - Provides a foundation for future report generation and dashboard development.
 
+The ETL pipeline also performs:
+
+- Dataset validation using business rules.
+- Data transformation into strongly typed Python objects.
+- Cross-dataset validation.
+- Dataset merging.
+- Report generation.
+- CSV export of management reports.
+
 ---
 
 # Project Architecture
@@ -55,36 +66,58 @@ The application:
 employee-report-generator/
 │
 ├── data/
-│   ├── python/
-│   │   ├── employees.csv
-│   │   ├── attendance.csv
-│   │   └── salary.csv
-│   │
-│   └── faker/
-│       ├── employees.csv
-│       ├── attendance.csv
-│       └── salary.csv
+│   ├── faker/
+│   └── python/
 │
-├── scripts/
-│   ├── python/
-│   │   ├── generate_employees.py
-│   │   ├── generate_attendance.py
-│   │   └── generate_salary.py
-│   │
-│   └── faker/
-│       ├── generate_employees.py
-│       ├── generate_attendance.py
-│       └── generate_salary.py
-│
-├── src/
 ├── docs/
 │   └── dataset_design.md
+│
+├── output/
+│   ├── employee_report.csv
+│   ├── attendance_report.csv
+│   ├── salary_report.csv
+│   └── summary_report.csv
+│
+├── scripts/
+│   ├── faker/
+│   └── python/
+│
+├── src/
+│   ├── pipeline/
+│   │   └── validation_pipeline.py
+│   │
+│   ├── readers/
+│   │   ├── employee_reader.py
+│   │   ├── attendance_reader.py
+│   │   └── salary_reader.py
+│   │
+│   ├── validators/
+│   │   ├── employee_validator.py
+│   │   ├── attendance_validator.py
+│   │   ├── salary_validator.py
+│   │   └── cross_validator.py
+│   │
+│   ├── transformers/
+│   │   ├── employee_transformer.py
+│   │   ├── attendance_transformer.py
+│   │   ├── salary_transformer.py
+│   │   └── merge_transformer.py
+│   │
+│   ├── reports/
+│   │   ├── employee_report.py
+│   │   ├── attendance_report.py
+│   │   ├── salary_report.py
+│   │   └── summary_report.py
+│   │
+│   └── main.py
+│
+├── utils/
+│   └── csv_writer.py
 │
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 ```
-
 
 # Dataset Generation Approaches
 
@@ -97,12 +130,13 @@ The project supports two independent implementations for generating the same HR 
 
 Both implementations generate identical dataset structures. The only difference is the method used to generate employee information.
 
-
 ---
 
 # Current Features
 
 The project currently supports:
+
+### Dataset Generation
 
 - Generate employee master dataset.
 - Generate monthly attendance records.
@@ -111,14 +145,32 @@ The project currently supports:
 - Maintain relationships between datasets.
 - Calculate attendance metrics.
 - Calculate payroll components.
-- Apply business validation rules.
-- Generate CSV datasets automatically.
-- Document dataset schema and business logic.
 - Support both Python Standard Library and Faker-based dataset generation.
+- Document dataset schema and business logic.
+- Generate CSV datasets automatically.
+
+### Validation
+
+- Apply business validation rules.
+- Validate employee, attendance, and salary datasets.
+- Perform cross-dataset validation.
+
+### Transformation
+
+- Read datasets through dedicated reader modules.
+- Transform CSV data into Python data types.
+- Merge employee, attendance, and salary records.
+
+### Reporting
+
+- Generate employee reports.
+- Generate attendance reports.
+- Generate salary reports.
+- Generate summary reports.
+- Export reports as CSV files.
 
 ---
 
-# Datasets
 # Datasets
 
 The project generates three related CSV datasets:
@@ -174,6 +226,59 @@ Generate Salary
           ▼
 salary.csv
 ```
+
+---
+
+# ETL Pipeline
+
+```text
+Employee Dataset
+Attendance Dataset
+Salary Dataset
+        │
+        ▼
+CSV Readers
+        │
+        ▼
+Validators
+        │
+        ▼
+Transformers
+        │
+        ▼
+Merge Transformer
+        │
+        ▼
+Business Records
+        │
+        ▼
+Report Generation
+        │
+        ▼
+Output Reports
+```
+
+After generating the datasets, the application processes them through the following stages:
+
+1. Read raw CSV datasets.
+2. Validate records using business rules.
+3. Transform raw string values into appropriate Python data types.
+4. Merge employee, attendance, and salary information.
+5. Generate management reports.
+6. Export reports as CSV files.
+
+---
+
+# Output Reports
+
+The ETL pipeline generates the following reports inside the `output/` directory.
+
+| Report | Description |
+|---------|-------------|
+| employee_report.csv | Employee master report |
+| attendance_report.csv | Attendance report |
+| salary_report.csv | Salary report |
+| summary_report.csv | Overall project summary |
 
 ---
 
@@ -257,8 +362,11 @@ salary.csv
 - ✅ Attendance Dataset Generation
 - ✅ Salary Dataset Generation
 - ✅ Dataset Documentation
-- 🚧 Report Generation Module
-- 🚧 Data Validation Module
+- ✅ Data Validation Pipeline
+- ✅ Data Transformation Pipeline
+- ✅ Dataset Merge Pipeline
+- ✅ Report Generation
+- ✅ CSV Export
 - 🚧 Analytics Module
 - 🚧 Testing
 
@@ -287,16 +395,17 @@ This project demonstrates practical knowledge of:
 
 Upcoming features include:
 
-- Employee Report Generator
 - Department-wise Analytics
-- Attendance Reports
-- Payroll Reports
-- Data Validation Engine
+- Interactive Dashboard
+- PostgreSQL Integration
+- Pandas-based Data Processing
 - Configuration using JSON
+- Unit Testing
+- Docker Support
+- Apache Airflow Integration
 - Exception Reporting
 - Logging Improvements
 - Dashboard-ready outputs
-- ETL pipeline integration
 
 ---
 
@@ -341,6 +450,18 @@ Generated datasets:
 
 ```text
 data/faker/
+```
+
+### Run the Complete ETL Pipeline
+
+```bash
+python src/main.py
+```
+
+Generated reports will be available in:
+
+```text
+output/
 ```
 
 ---
