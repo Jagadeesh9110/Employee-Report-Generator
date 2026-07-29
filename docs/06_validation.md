@@ -8,29 +8,46 @@ The Reader Layer is responsible only for reading CSV files and converting them i
 
 The Validation Layer ensures that the loaded data satisfies the required business rules before any transformation or report generation begins.
 
+# Validation Layer Responsibilities
+
+The Validation Layer is responsible for:
+
+- Validating individual datasets.
+- Enforcing business rules.
+- Detecting duplicate records.
+- Verifying relationships across datasets.
+- Returning all validation errors.
+- Preventing invalid data from reaching the Transformation Layer.
+
 ---
 
 # Validation Flow
 
 ```
-CSV Files
-    │
-    ▼
-Reader Layer
-    │
-    ▼
-Python Objects (list[dict])
-    │
-    ▼
-Validation Layer
-    │
-    ▼
-Validation Errors
+                 CSV Files
+                     │
+                     ▼
+              Reader Layer
+                     │
+                     ▼
+           Python Objects (list[dict])
+                     │
+                     ▼
+            Validation Pipeline
+             ┌────────┼────────┐
+             ▼        ▼        ▼
+     Employee      Attendance   Salary
+     Validator     Validator    Validator
+             └────────┼────────┘
+                      ▼
+              Cross Validator
+                      ▼
+              Combined Errors
+                      ▼
+                Return list[str]
 ```
 
-Each validator receives data from the Reader Layer, performs validations, and returns a list of validation errors.
-
-The validators never stop at the first error. Instead, they collect all errors and return them together.
+The Validation Pipeline receives the Python objects produced by the Reader Layer, delegates validation to the appropriate validator modules, aggregates all validation errors, and returns them as a single list[str].
 
 ---
 
@@ -329,11 +346,7 @@ Each layer has exactly one responsibility.
 
 # Validation Output
 
-Every validator returns
-
-```python
-list[str]
-```
+The Validation Pipeline returns a consolidated `list[str]` containing all validation errors reported by the validator modules.
 
 Example:
 
@@ -360,23 +373,29 @@ salary.csv
 Readers
         │
         ▼
-Employee Validator
-Attendance Validator
-Salary Validator
+Validation Pipeline
         │
-        ▼
-Cross Validator
-        │
-        ▼
+        ├── Employee Validator
+        ├── Attendance Validator
+        ├── Salary Validator
+        └── Cross Validator
+                │
+                ▼
 Combined Validation Errors
 ```
 
-The validation pipeline ensures that:
+## Validation Pipeline Responsibilities
 
-- Individual records are valid.
-- Numeric values are correct.
-- Duplicate records are detected.
-- Business rules are satisfied.
-- Relationships across datasets remain consistent.
+The Validation Pipeline acts as the orchestrator for the validation process.
+
+It is responsible for:
+
+- Loading all datasets through the Reader Layer.
+- Executing all dataset validators.
+- Executing the Cross Validator.
+- Aggregating validation errors.
+- Returning a single list of validation errors.
+
+The Validation Pipeline does not implement validation logic itself. It delegates validation to specialized validator modules.
 
 Only after successful validation should the data proceed to the Transformation Layer.
