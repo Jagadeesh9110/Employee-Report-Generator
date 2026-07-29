@@ -1,0 +1,101 @@
+employee_id,employee_name,department,designation,employment_type,status,joining_date
+1001,James Anderson,Engineering,Senior Software Engineer,Contract,Active,2024-12-01
+1002,Michael Jackson,Sales,Sales Executive,Full-Time,Active,2023-06-01
+1003,Michael Thompson,Engineering,Software Engineer,Full-Time,Active,2021-05-17
+1004,Henry Miller,Sales,Sales Executive,Full-Time,Active,2023-07-08
+1005,Ava White,Marketing,Digital Marketing Analyst,Contract,Active,2023-09-17
+1006,Lucas White,Marketing,Marketing Executive,Full-Time,Active,2021-02-28
+1007,Olivia Lee,Engineering,Software Engineer,Full-Time,Active,2020-02-23
+1008,Amelia Garcia,Engineering,Engineering Manager,Contract,Active,2020-04-23
+1009,Charlotte Martin,Marketing,Marketing Executive,Contract,Active,2023-12-24
+1010,Michael Perez,Engineering,Senior Software Engineer,Full-Time,Active,2020-04-01
+1011,Evelyn Williams,Marketing,Digital Marketing Analyst,Full-Time,Active,2024-02-08
+1012,Sophia Wilson,Engineering,Software Engineer,Contract,Active,2023-07-10
+1013,Harper Jackson,Sales,Sales Manager,Full-Time,Active,2024-04-08
+1014,Mia Taylor,Engineering,Engineering Manager,Intern,Active,2025-11-30
+1015,Henry Brown,Sales,Sales Manager,Full-Time,Active,2021-07-17
+1016,Harper Smith,Engineering,Tech Lead,Contract,Active,2025-02-20
+1017,Ava Perez,IT,System Administrator,Intern,Active,2021-12-22
+1018,Ella Jackson,Customer Support,Support Engineer,Intern,Active,2020-05-08
+1019,Michael Davis,Customer Support,Support Engineer,Full-Time,Active,2021-07-31
+1020,Olivia Thompson,Finance,Financial Analyst,Full-Time,Active,2024-02-06
+1021,Ethan Moore,Sales,Sales Manager,Full-Time,Active,2025-07-03
+1022,Ethan Thomas,Sales,Sales Executive,Full-Time,Active,2023-05-18
+1023,Olivia Smith,IT,Network Engineer,Full-Time,Active,2025-04-28
+1024,Harper Jackson,Sales,Sales Executive,Full-Time,Active,2025-11-13
+1025,Michael Miller,Engineering,Software Engineer,Full-Time,Active,2021-09-18
+1026,Michael Johnson,Engineering,Engineering Manager,Full-Time,Active,2020-11-07
+1027,Alexander Taylor,Engineering,Senior Software Engineer,Full-Time,Active,2020-02-03
+1028,Harper Jones,Engineering,Software Engineer,Full-Time,Active,2023-07-23
+1029,Henry Williams,Sales,Business Development Executive,Full-Time,Active,2023-05-10
+1030,Amelia Davis,Marketing,Marketing Specialist,Intern,Active,2021-04-03
+1031,Daniel Wilson,Engineering,Senior Software Engineer,Intern,Active,2023-12-21
+1032,Olivia Johnson,Operations,Operations Analyst,Full-Time,Active,2021-05-31
+1033,Ava Miller,Operations,Operations Manager,Full-Time,Inactive,2023-11-24
+1034,Ella Johnson,Engineering,Senior Software Engineer,Full-Time,Active,2025-10-07
+1035,Alexander Taylor,Marketing,Digital Marketing Analyst,Full-Time,Active,2020-12-19
+1036,Ava Johnson,Engineering,Engineering Manager,Contract,Active,2025-05-20
+1037,Amelia Smith,Finance,Financial Analyst,Full-Time,Active,2024-01-17
+1038,Ava Moore,Marketing,Marketing Executive,Full-Time,Inactive,2023-01-24
+1039,James Wilson,Sales,Sales Executive,Contract,Active,2025-08-07
+1040,Lucas Moore,Sales,Sales Executive,Intern,Active,2023-06-22
+1041,Ethan Taylor,IT,Network Engineer,Contract,Active,2020-04-29
+1042,James Garcia,Sales,Business Development Executive,Intern,Active,2020-10-27
+1043,Benjamin Anderson,Sales,Business Development Executive,Full-Time,Active,2021-01-18
+1044,Ava Harris,Engineering,Engineering Manager,Full-Time,Active,2025-03-18
+1045,Alexander Harris,Engineering,Engineering Manager,Full-Time,Active,2023-03-25
+1046,Sophia White,Engineering,Tech Lead,Contract,Active,2024-12-20
+1047,Michael Taylor,Human Resources,HR Executive,Full-Time,Active,2025-12-03
+1048,Olivia Jones,Engineering,Software Engineer,Full-Time,Active,2021-02-08
+1049,Ella Martin,Customer Support,Support Engineer,Full-Time,Active,2020-02-13
+1050,Sophia Brown,Engineering,Software Engineer,Full-Time,Active,2020-02-24
+1051,William Anderson,IT,System Administrator,Full-Time,Active,2023-07-29
+1052,Ella Lee,Engineering,Senior Software Engineer,Full-Time,Active,2023-11-05
+1053,Ella Wilson,Engineering,Software Engineer,Full-Time,Active,2024-05-10
+1054,Ava Johnson,Engineering,Tech Lead,Full-Time,Active,2024-08-24
+1055,Daniel Wilson,Finance,Finance Manager,Contract,Active,2025-12-07
+1056,Mia Perez,Finance,Accountant,Contract,Active,2021-06-21
+1057,Michael Anderson,Engineering,Software Engineer,Full-Time,Inactive,2023-02-25
+1058,Charlotte Garcia,Operations,Operations Analyst,Contract,Active,2021-12-24
+1059,Ava Jones,Operations,Operations Executive,Intern,Active,2022-11-15
+1060,John White,Engineering,Tech Lead,Full-Time,Active,2022-07-22
+1061,Charlotte Miller,IT,System Administrator,Full-Time,Active,2020-02-25
+1062,Michael Perez,Engineering,Tech Lead,Full-Time,Active,2021-11-05
+1063,Amelia Garcia,Sales,Business Development Executive,Full-Time,Active,2025-01-14
+1064,Lucas Williams,Engineering,Tech Lead,Full-Time,Active,2025-07-31
+1065,William Brown,Operations,Operations Manager,Full-Time,Active,2021-11-01
+1066,John Davis,IT,Network Engineer,Full-Time,Active,2025-06-24
+1067,William Lee,Human Resources,HR Manager,Full-Time,Active,2025-02-10
+1068,Olivia Jackson,IT,Network Engineer,Contract,Active,2024-02-01
+1069,Henry Garcia,Marketing,Marketing Specialist,Full-Time,Active,2021-04-21
+1070,Sophia Jackson,Engineering,Software Engineer,Intern,Active,2023-01-10
+1071,Michael White,Engineering,Senior Software Engineer,Intern,Active,2022-05-09
+1072,Emma Wilson,Sales,Business Development Executive,Contract,Active,2021-09-28
+1073,Harper Davis,Engineering,Tech Lead,Contract,Active,2023-12-01
+1074,Sophia Johnson,Operations,Operations Analyst,Full-Time,Active,2020-01-30
+1075,Amelia Williams,Sales,Sales Manager,Full-Time,Active,2023-08-19
+1076,Harper Brown,Engineering,Engineering Manager,Full-Time,Active,2025-05-16
+1077,Alexander Williams,Marketing,Marketing Executive,Full-Time,Inactive,2022-03-05
+1078,John Moore,Finance,Accountant,Full-Time,Active,2024-12-12
+1079,Henry Brown,Engineering,Tech Lead,Full-Time,Active,2024-03-19
+1080,Ella Johnson,Sales,Business Development Executive,Intern,Active,2024-06-11
+1081,Michael Lee,Sales,Sales Executive,Full-Time,Active,2023-07-05
+1082,Amelia Miller,Operations,Operations Executive,Full-Time,Active,2022-10-03
+1083,Evelyn Lee,Sales,Business Development Executive,Full-Time,Active,2020-05-30
+1084,Evelyn Johnson,Human Resources,HR Executive,Full-Time,Active,2025-02-27
+1085,Ava Davis,Engineering,Engineering Manager,Intern,Active,2024-09-09
+1086,Alexander Perez,Marketing,Digital Marketing Analyst,Full-Time,Active,2022-06-04
+1087,Mia Moore,Sales,Sales Manager,Full-Time,Active,2025-03-29
+1088,Ethan Jackson,Sales,Sales Executive,Full-Time,Active,2023-02-10
+1089,James Moore,Sales,Sales Executive,Full-Time,Active,2024-11-09
+1090,Olivia Thompson,Marketing,Digital Marketing Analyst,Intern,Active,2021-06-23
+1091,Ethan Taylor,Marketing,Digital Marketing Analyst,Contract,Active,2024-02-25
+1092,Amelia Taylor,Sales,Sales Executive,Contract,Active,2020-01-31
+1093,Charlotte Thomas,Engineering,Engineering Manager,Full-Time,Active,2022-01-04
+1094,Ava Perez,Engineering,Senior Software Engineer,Full-Time,Active,2025-03-30
+1095,Henry Taylor,Engineering,Software Engineer,Full-Time,Active,2023-11-20
+1096,Henry Lee,Sales,Sales Executive,Contract,Active,2020-10-01
+1097,Henry Anderson,Sales,Sales Executive,Full-Time,Active,2020-11-26
+1098,Harper Jackson,Finance,Finance Manager,Full-Time,Active,2024-11-07
+1099,Sophia Moore,Marketing,Marketing Specialist,Full-Time,Active,2025-01-31
+1100,Mia Martin,Sales,Sales Manager,Full-Time,Active,2020-05-12
