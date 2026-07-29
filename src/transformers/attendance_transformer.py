@@ -34,13 +34,13 @@ def transform_attendance_data(
             "leave_days": int(attendance["leave_days"]),
             "absent_days": int(attendance["absent_days"]),
             "late_days": int(attendance["late_days"]),
-            "expected_working_hours": float(
+            "expected_working_hours": int(
                 attendance["expected_working_hours"]
             ),
-            "actual_working_hours": float(
+            "actual_working_hours": int(
                 attendance["actual_working_hours"]
             ),
-            "overtime_hours": float(attendance["overtime_hours"]),
+            "overtime_hours": int(attendance["overtime_hours"]),
             "attendance_percentage": float(
                 attendance["attendance_percentage"]
             ),
